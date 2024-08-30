@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: DmBold;
+    src: url(fonts/DMSans-Bold.ttf);
+}
+@font-face {
+    font-family: DmSemi;
+    src: url(fonts/DMSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: Dm;
+    src: url(fonts/DMSans-Regular.ttf);
+}
+
+body{
+    background-color: #080025;
+    color: white;
+    font-family: Dm;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5em;
+
+    div{
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+        border-radius: 25px;
+        width: 600px;
+        height: 2em;
+        border: 1px rgb(62, 128, 226) solid ;
+        background: #ffffff4f;
+        box-shadow: -1px 3px 20px 5px #5bc4de75;
+        backdrop-filter: blur( 20px );
+    }
+
+    ul{
+        display: flex;
+        list-style-type: none;
+        width: 500px;
+        justify-content: space-between;
+        border-radius: 25px;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+
+header{
+    display: flex;
+    margin-top: 3em;
+    justify-content: center;
+    height: 30vh;
+
+    aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        margin-bottom: 5em;
+        width: 30%;
+        p{
+            margin-top: 4px;
+            width: 95%;
+        }
+        span,h2{
+            color: rgb(230, 160, 31);
+        }
+
+        h2{
+            font-size:16px;
+        }
+    }
+
+
+    img{
+        width: 24px;
+        height: 24px;
+    }
+
+
+    .icon{
+        border-radius: 9999px;
+        width: 230px;
+        height: 230px ;
+        mask-image: linear-gradient(black 90%, transparent);
+    }
+
+}
+
+.container{
+    display: flex;
+    gap: 1em;
+    margin-top: 12px;
+}
+
+button{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 25px;
+    background-color: #2615db3b;
+    color: white;
+    border: 1px rgb(62, 128, 226) solid ;
+    width: 13em;
+    cursor: pointer;
+    transition: .2s all;
+    font-family: DmSemi;
+
+    img{
+        margin-left: 1em;
+    }
+
+    &:hover{
+        background-color: #554cb9d5;
+    }
+}
