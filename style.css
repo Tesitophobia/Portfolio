@@ -102,7 +102,7 @@ header{
             width: 95%;
         }
         span,h2{
-            color: rgb(230, 160, 31);
+            color: #e6a01f;
         }
 
         h2{
@@ -209,4 +209,79 @@ button{
 
 .scroll:hover div{
     animation-play-state: paused;
+}
+
+#Timeline{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    .initial{
+        display: flex; 
+        flex-direction: column; 
+        justify-content: start;
+        align-items: start;
+        width: 40%;
+    img{
+        width: 32px
+       };
+
+    p{
+        font-family: DmBold;
+        font-size: 28px;
+    }
+    }
+    
+ 
+}
+
+.LineTime{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+    .Line{
+        height: 20vh;
+        border: 2px solid #e6a01f;
+        border-left-width: 2px;
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+        border-right-width: 0px;
+        margin-top: -.5em;
+        margin-left: .39em;
+    }
+    
+    .aside{
+        font-size: 25px;
+        width: 10%;
+    }
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 80%;
+    opacity: .9;
+    justify-content: start;
+    align-items: start;
+    width: 50%;
+
+    p{
+        margin-top: 1em;
+        font-size: 18px;
+    }
+}
+
+#Proyects{
+    height: 100vh;
+
+     h2{
+        font-family: DmBold;
+    }
 }
