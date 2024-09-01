@@ -218,21 +218,21 @@ button{
     justify-content: center;
     align-items: center;
     gap: 1em;
-    .initial{
-        display: flex; 
-        flex-direction: column; 
-        justify-content: start;
-        align-items: start;
-        width: 40%;
-    img{
-        width: 32px
-       };
+}
+.initial{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: start;
+    align-items: start;
+    width: 40%;
+img{
+    width: 32px
+   };
 
-    p{
-        font-family: DmBold;
-        font-size: 28px;
-    }
-    }
+p{
+    font-family: DmBold;
+    font-size: 28px;
+}
     
  
 }
@@ -244,6 +244,7 @@ button{
     justify-content: center;
     align-items: center;
     width: 50%;
+    margin-top: 1em;
 
     .Line{
         height: 20vh;
@@ -276,12 +277,61 @@ button{
         margin-top: 1em;
         font-size: 18px;
     }
+
+    h4{
+        color: rgb(140, 231, 140);
+    }
 }
 
 #Proyects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 6em;
     height: 100vh;
 
-     h2{
+
+    h2{
         font-family: DmBold;
     }
 }
+
+.card{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 40%;
+    margin-top: 4em;
+
+    .cardimage{
+        aspect-ratio: 16/9;
+        width: 350px;
+        height: 196.88px;
+        border-radius: 25px;
+        border: 1px solid #ffffff13;
+        margin-left: 2em;
+    }
+
+
+    p{
+        width: 90%;
+    }
+}
+
+.buttons{
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    gap: 1em;
+    margin-top: 1em;
+
+    button{
+        width: 10em;
+        gap: 12px;
+
+    }
+}
+
